@@ -1,5 +1,7 @@
+<!-- incomplited -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +11,8 @@
 </head>
 <body>
     <div id="app" class="container ">
-        
-        <div class="" >
+     
+       <div class="" >
           <section class="vh-100" style="background-color: #eee;">
             <div class="container py-5 h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
@@ -36,33 +38,9 @@
                           <button type="submit" class="btn btn-warning">Get tasks</button>
                         </div>
                       </form>
-          
-                      <table class="table mb-4">
-                        <thead>
-                          <tr>
-                            <th scope="col">Todo item</th>
-                            <th scope="col">Actions</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr v-for="todo in todos" >
-                            <td>{{ todo.text }}</td>
-                            <td>
-                              <button 
-                              v-if="!todo.done" 
-                              @click="compliteTodo(todo)" 
-                              type="submit" 
-                              class="btn btn-success ms-1">Done</button>
-                              <button 
-                              v-else 
-                              type="submit"
-                              @click="undoTodo(todo)" 
-                               class="btn btn-danger">Not Done</button>
-                            </td>
-                          </tr>
-                          
-                        </tbody>
-                      </table>
+
+                      <todo />
+                      
           
                     </div>
                   </div>
